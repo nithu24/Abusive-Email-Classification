@@ -15,6 +15,16 @@ The goal of this project is to build a text classification model to find whether
 
 Text Documents ---> EDA ---> Text Preprocessing ---> Feature Engineering ---> Model Building ---> Deployment
 
+## Python Libraries 
+
+![NumPy](https://img.shields.io/badge/-NumPy-05122A?style=flat&logo=NumPy)&nbsp;
+![Pandas](https://img.shields.io/badge/-Pandas-05122A?style=flat&logo=Pandas)&nbsp;
+![Matplotlib](https://img.shields.io/badge/-Matplotlib-05122A?style=flat&logo=Matplotlib)&nbsp;
+![Seaborn](https://img.shields.io/badge/-Seaborn-05122A?style=flat&logo=Seaborn)&nbsp;
+![NLTK](https://img.shields.io/badge/-NLTK-05122A?style=flat&logo=NLTK)&nbsp;
+![Scikit-Learn](https://img.shields.io/badge/-ScikitLearn-05122A?style=flat&logo=scikit-learn)\
+![Imblearn](https://img.shields.io/badge/-Imblearn-05122A?style=flat&logo=Imblearn)&nbsp;
+
 ## Dataset
 
 We are using Emails.csv as the dataset which contains 5 columns and 48076 rows.
