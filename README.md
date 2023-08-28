@@ -24,10 +24,11 @@ Text Documents ---> EDA ---> Text Preprocessing ---> Feature Engineering ---> Mo
 ![NLTK](https://img.shields.io/badge/-NLTK-05122A?style=flat&logo=NLTK)&nbsp;
 ![Scikit-Learn](https://img.shields.io/badge/-ScikitLearn-05122A?style=flat&logo=scikit-learn)\
 ![Imblearn](https://img.shields.io/badge/-Imblearn-05122A?style=flat&logo=Imblearn)&nbsp;
+![Transformers](https://img.shields.io/badge/-Transformers-05122A?style=flat&logo=Transformers)&nbsp;
 
 ## Dataset
 
-We are using Emails.csv as the dataset which contains 5 columns and 48076 rows.
+The dataset utilized for this project is 'Emails.csv,' comprising 48,076 rows and featuring 5 columns.
 ![image](https://github.com/nithu24/Abusive-Email-Classification/assets/92521223/ae6dff77-f127-4ec3-b353-8a2954cfd0c8)
 
 ## Data Insight
@@ -44,28 +45,30 @@ We can use Word cloud is another to find the most frequent word.
 
 ## Feature Engineering
 
-We leverage TF-IDF (Term Frequency-Inverse Document Frequency), a powerful NLP technique, to enhance our abusive email classification task. 
+This project leverages the powerful NLP technique of TF-IDF (Term Frequency-Inverse Document Frequency) to enhance our abusive email classification task.
 
 ## Model Building 
 
-We build models on different algorithms using parameters such as accuracy, precision and recall.
-While comparing, random forest got high accuracy.
-so we used random forest for final model building.
+I constructed models using different algorithms, considering performance metrics such as accuracy, precision, and recall. After comparing the results, I observed that the random forest algorithm achieved the highest accuracy. Consequently, I opted to utilize the random forest algorithm for the final model building.
 ![image](https://github.com/nithu24/Abusive-Email-Classification/assets/92521223/43b605ec-d83c-4d08-8cd0-7a7df0337a1c)
 
 ## Deployment
 
-We opted for Streamlit to deploy our solution, recognizing its capability to rapidly transform data scripts into accessible web applications. By simply providing the running script to the tool, it seamlessly converts our work into a user-friendly web app, offering an efficient way to showcase and share our results.
+I opted for Streamlit to deploy the solution, recognizing its capability to rapidly transform data scripts into accessible web applications. By simply providing the running script to the tool, it seamlessly converted my work into a user-friendly web app, offering an efficient way to showcase and share the results.
 ![image](https://github.com/nithu24/Abusive-Email-Classification/assets/92521223/31f690fb-cd49-444c-afcc-8d3608324bf5)
 
 ## Challenges 
 
 1) Target class is imbalanced in nature 
-2) We used random forest for model building and got 97% accuracy and in deployment also we are  predicting correctly but if we can get a out of vocabulary word at the time of testing which is not trained during training dataset.
+2)I employed the random forest for model building, achieving a commendable accuracy of 97%. During deployment, my predictions remained accurate. However, a challenge arose during testing: the potential for encountering out-of-vocabulary words not present in the training dataset. This scenario prompted me to explore strategies for improving the model's ability to handle previously unseen words.
 
 ## Solution to overcome challenges
 
-
 1) We used SMOTE to remove class imbalance 
-2) We can use hugging face library which allows us to easily add new tokens to the vocabulary of an existing tokenizer like BERT, DISTILBERT etc. it is a pertained model which contains Wikipedia and book corpus words. Here we used DistilBERT because it is smaller faster cheaper and light transformer model trained by distilling BERT base.
+2) To tackle the above mentioned challenge, I utilized the Hugging Face library, which offers a convenient method for introducing new tokens to the vocabulary of existing tokenizers such as BERT and DistilBERT. These pretrained models encompass a wide range of vocabulary from sources like Wikipedia and book corpora. In my approach, I specifically employed DistilBERT due to its merits: it's a lightweight and efficient transformer model derived from BERT base through distillation, aligning well with the goals of achieving efficient enhancements to model performance.
+
+
+
+
+
 
