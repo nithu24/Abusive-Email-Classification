@@ -59,8 +59,8 @@ I opted for Streamlit to deploy the solution, recognizing its capability to rapi
 
 ## Challenges 
 
-1) Target class is imbalanced in nature 
-2)I employed the random forest for model building, achieving a commendable accuracy of 97%. During deployment, my predictions remained accurate. However, a challenge arose during testing: the potential for encountering out-of-vocabulary words not present in the training dataset. This scenario prompted me to explore strategies for improving the model's ability to handle previously unseen words.
+1) Target class is imbalanced in nature. 
+2) I employed the random forest for model building, achieving a commendable accuracy of 97%. During deployment, my predictions remained accurate. However, a challenge arose during testing: the potential for encountering out-of-vocabulary words not present in the training dataset. This scenario prompted me to explore strategies for improving the model's ability to handle previously unseen words.
 
 ## Solution to overcome challenges
 
