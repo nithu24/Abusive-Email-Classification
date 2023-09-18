@@ -64,7 +64,7 @@ I opted for Streamlit to deploy the solution, recognizing its capability to rapi
 
 ## Solution to overcome challenges
 
-1) We used SMOTE to remove class imbalance 
+1) Used SMOTE to remove class imbalance 
 2) To tackle the above mentioned challenge, I utilized the Hugging Face library, which offers a convenient method for introducing new tokens to the vocabulary of existing tokenizers such as BERT and DistilBERT. These pretrained models encompass a wide range of vocabulary from sources like Wikipedia and book corpora. In my approach, I specifically employed DistilBERT due to its merits: it's a lightweight and efficient transformer model derived from BERT base through distillation, aligning well with the goals of achieving efficient enhancements to model performance.
 
 
